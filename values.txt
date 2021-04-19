@@ -1,0 +1,12 @@
+id = json.tender.id
+value.amount = json.tender.value.amount
+lots.title = json.tender.lots.map( a => a.title)
+lots.value.amount = json.tender.lots.map( a => a.value.amount)
+items.unit.name = json.tender.items.map( a => a.unit.name)
+items.unit.value.amount = json.tender.items.map( a => a.unit.value.amount)
+items.quantity = json.tender.items.map( a => a.quantity)
+items.description = json.tender.items.map( a => a.description)
+items.classification.description = json.tender.items.map( a => a.classification.description)
+items.classification.description.id = json.tender.items.map( a => a.classification.id )
+tenderers.name = json.tender.tenderers.map(a => a.name)
+tenderers.id = json.tender.tenderers.map(a => a.id)
